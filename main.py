@@ -8,9 +8,12 @@ LED_PIN = 18
 GPIO.setup(LED_PIN, GPIO.OUT)
 try:
     for _ in range(5):
-        GPIO.output(LED_PIN, GPIO.HIGH)  # Acende o LED
+        print("Acendendo o LED...")
+        GPIO.output(LED_PIN, GPIO.HIGH)
+        print("LED aceso.")
         time.sleep(1)  # Aguarda 1 segundo
         GPIO.output(LED_PIN, GPIO.LOW)   # Apaga o LED
+        print("LED apagado.")
         time.sleep(1)  # Aguarda 1 segundo
 finally:    
     GPIO.cleanup()  # Limpa a configuração dos pinos
