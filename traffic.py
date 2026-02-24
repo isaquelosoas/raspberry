@@ -16,7 +16,7 @@ import RPi.GPIO as GPIO
 # Pinos (BCM)
 LED_RED = 18
 LED_GREEN = 23
-LED_YELLOW = 24
+LED_YELLOW = 25
 BUTTON_PIN = 17
 
 # Estados do semáforo: 0 = Vermelho, 1 = Verde, 2 = Amarelo
